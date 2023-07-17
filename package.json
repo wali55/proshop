@@ -1,0 +1,23 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "eCommerce application build with the mern stack",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wali55/proshop.git"
+  },
+  "author": "Mohammad Waliullah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wali55/proshop/issues"
+  },
+  "homepage": "https://github.com/wali55/proshop#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
