@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import productRoutes from "./routes/productRoutes.js";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
+import cors from "cors";
 
 dotenv.config();
 
@@ -11,6 +12,8 @@ connectDB();
 const port = process.env.PORT || 5000;
 
 const app = express();
+
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("API is running");
